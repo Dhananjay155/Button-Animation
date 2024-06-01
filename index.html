@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Transition and Animation</title>
+    <style>
+        #myButton {
+            background-color: blue;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 5s;
+        }
+
+        #myButton:hover {
+            background-color: red;
+        }
+
+        @keyframes increaseSize {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(2);
+            }
+        }
+
+        .increase-size {
+            animation: increaseSize 2s forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myButton">Click Me</button>
+</body>
+
+</html>
